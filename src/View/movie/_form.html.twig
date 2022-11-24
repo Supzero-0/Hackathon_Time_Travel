@@ -1,7 +1,7 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-	<h1>Ajout de film !</h1>
+
 	<div class="container ">
 		<form method="post">
 			<input type="hidden" value="" name="id">
@@ -38,10 +38,10 @@
 				</select>
 			</div>
 			<div class="mb-3 ">
-				<label for="url_image" class="form-label">Titre</label>
+				<label for="url_image" class="form-label">URL</label>
 				<input type="text" class="form-control" id="url_image" name="url_image" placeholder="https://.....">
 
-				<div class="button  justify-content-center align-self-center" id="addbutton">
+				<div class="button  justify-content-center align-self-center pt-5" id="addbutton">
 					<button>Envoyer</button>
 				</div>
 			</form>

@@ -2,19 +2,27 @@
 
 {% block content %}
 	<section class="row">
-		<section class="col-1">
+		<section class="col-1 bg-dark">
 			<p>blabla</p>
 		</section>
 
 		<section class="col-11">
+			<div class="row" style="height: 150px; background-color: rgba(255,0,0,0.1);">
+				{% if préhistoire is same as préhistoire %}
+					<img class="col-10 p-0 mh-100" src="/assets/images/prehistoire.jpg">
+				{% endif %}
+				<a class="rounded float-right col-2 " href="/">
+					<img class="col-12 p-0" src="/assets/images/favicon.png">
+				</a>
+			</div>
 			<div id="tags-selection">
-				<button class="all-button">Tous</button>
-				<button class="family-button"># tout public</button>
-				<button class="adult-button"># déconseillé au moins de 12 ans</button>
+				<button type="button" class="all-button btn btn-dark mt-5">Tous</button>
+				<button type="button" class="family-button btn btn-dark mt-5">tout public</button>
+				<button type="button" class="adult-button btn btn-dark mt-5">déconseillé au moins de 12 ans</button>
 			</div>
 			{% for movie in movies %}
-				<div class="{{ movie.public }} card mb-3 p-2 col-md-10 container ">
-					<div class="row g-0 justify-content-start">
+				<div class="{{ movie.public }} card mb-3 p-2 col-md-10 container bg-dark">
+					<div class="row ">
 						<div class="col-md-3">
 							<img src="{{ movie.url_image }}" class="img-fluid rounded-start">
 						</div>
@@ -23,6 +31,7 @@
 								<h5 class="card-title fw-bold">{{ movie.title }}</h5>
 								<p class="card-text">{{ movie.description }}</p>
 								<p class="card-text">{{ movie.public }}</p>
+								<p>chap	{{ movies.0.era }}</p>
 							</div>
 						</div>
 					</div>
