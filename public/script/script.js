@@ -24,3 +24,8 @@ adultButton.addEventListener("click", function () {
     familyArticles.forEach(visible);
     familyArticles.forEach(hidden);
 });
+
+allButton.addEventListener("click", function () {
+    adultArticles.forEach(visible);
+    familyArticles.forEach(visible);
+});
