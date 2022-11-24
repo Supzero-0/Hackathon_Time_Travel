@@ -1,63 +1,66 @@
--- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2
--- http://www.phpmyadmin.net
---
--- Client :  localhost
--- Généré le :  Jeu 26 Octobre 2017 à 13:53
--- Version du serveur :  5.7.19-0ubuntu0.16.04.1
--- Version de PHP :  7.0.22-0ubuntu0.16.04.1
+DROP DATABASE IF EXISTS time_travel;
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+CREATE DATABASE time_travel;
 
+USE time_travel;
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de données :  `simple-mvc`
---
-
--- --------------------------------------------------------
-
---
--- Structure de la table `item`
---
-
-CREATE TABLE `item` (
-  `id` int(11) UNSIGNED NOT NULL,
-  `title` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Contenu de la table `item`
---
-
-INSERT INTO `item` (`id`, `title`) VALUES
-(1, 'Stuff'),
-(2, 'Doodads');
-
---
--- Index pour les tables exportées
---
-
---
--- Index pour la table `item`
---
-ALTER TABLE `item`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `item`
---
-ALTER TABLE `item`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+CREATE TABLE movie (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `title` VARCHAR(255),
+  `description` TEXT,
+  `era` VARCHAR(255),
+  `public` VARCHAR(255),
+  `url_image` TEXT,  
+  PRIMARY KEY (`id`)
+  );
+ 
+ INSERT INTO `movie`
+ (
+    `title`,
+    `description`,
+    `era`,
+    `public`,
+    `url_image`
+  ) VALUES
+  (
+  "alpha",
+  "Un jeune homme des cavernes peine à rentrer chez lui après avoir été séparé de sa tribu lors d'une chasse au bison. Il trouve la compagnie d'un de loup également perdu et commence une amitié capable de changer l'humanité.",
+  "préhistoire",
+  "tout public",
+  "https://m.media-amazon.com/images/M/MV5BODI4OTk1ODY3N15BMl5BanBnXkFtZTgwMDI1MTcwNjM@._V1_Ratio0.7273_AL_.jpg"
+  ),
+  (
+  "les croods",
+  "Après que la destruction de leur caverne, une famille d'hommes des cavernes doit traverser un monde fantastique et inconnu avec l'aide d'un jeune garçon inventif.",
+  "préhistoire",
+  "tout public",
+  "https://m.media-amazon.com/images/M/MV5BMTcyOTc2OTA1Ml5BMl5BanBnXkFtZTcwOTI1MjkzOQ@@._V1_Ratio0.7273_AL_.jpg"
+  ),
+  (
+  "RRRrrrr!!!",
+  "Après que la destruction de leur caverne, une famille d'hommes des cavernes doit traverser un monde fantastique et inconnu avec l'aide d'un jeune garçon inventif.",
+  "préhistoire",
+  "tout public",
+  "https://m.media-amazon.com/images/M/MV5BODg1YjI2OTQtZDdkMy00NDA4LTk4MDQtZWFiMjhiNjI5ZjUxXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_Ratio0.7568_AL_.jpg"
+  ),
+  (
+  "Le petit dinosaure et la vallée des merveilles",
+  "Un brontosaure orphelin s'allie à d'autres jeunes dinosaures afin de retrouver leur famille dans une vallée.",
+  "préhistoire",
+  "tout public",
+  "https://m.media-amazon.com/images/M/MV5BNDVhZjVmZWYtYTE0OC00MGFjLWI1YWQtZmJhNmE5NzI4ZWE4XkEyXkFqcGdeQXVyMzczMzE2ODM@._V1_Ratio0.7273_AL_.jpg"
+  ),
+  (
+  "Pourquoi j'ai pas mangé mon père",
+  "L’histoire trépidante d’Édouard, fils aîné du roi des simiens, qui, considéré à sa naissance comme trop malingre, est rejeté par sa tribu. Il grandit loin d’eux, auprès de son ami Ian, et, incroyablement ingénieux, il découvre le feu, la chasse, l’habitat moderne, l’amour et même… l’espoir.",
+  "préhistoire",
+  "tout public",
+  "https://m.media-amazon.com/images/M/MV5BZjg0MWNjNDUtZmVhYy00NTBkLThhY2EtNDQ2MzdkNWRkN2M0XkEyXkFqcGdeQXVyODEwODYzMTU@._V1_Ratio0.6762_AL_.jpg"
+  ),
+  (
+  "Ben-Hur",
+  "Lorsqu'un prince juif est trahi et envoyé aux galères par un ami romain, il recouvre sa liberté et revient se venger.",
+  "antiquité",
+  "tout public",
+  "https://m.media-amazon.com/images/M/MV5BNjgxY2JiZDYtZmMwOC00ZmJjLWJmODUtMTNmNWNmYWI5ODkwL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_Ratio0.7273_AL_.jpg"
+  )
