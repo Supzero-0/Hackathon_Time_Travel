@@ -14,4 +14,6 @@ return [
     'items/add' => ['ItemController', 'add',],
     'items/delete' => ['ItemController', 'delete',],
     'eras' => ['MovieController', 'index', ['era']],
+    'movie/add' => ['MovieController', 'add',],
+
 ];

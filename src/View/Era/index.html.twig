@@ -1,6 +1,10 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+    {% if chapters.0.id == 15 %}
+			<img class="MobileChapterImage" src="/assets/images/{{ chapters.0.background_image }}"></div>
+    {% endif %}
+        
 	<section class="col-1">
 		<p>blabla</p>
 	</section>
