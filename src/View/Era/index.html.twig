@@ -84,17 +84,15 @@
 				<a class="col-2 " href="/">
 					<img class="col-12" src="/assets/images/favicon.png">
 				</a>
-				<h1 class="col-10 text-center pt-5">{{ movies.0.era }}</h1>
+				<h1 class="col-10 text-center pt-5 text-warning">{{ movies.0.era }}</h1>
 			</div>
-			<div id="tags-selection">
-				<button type="button" class="all-button btn btn-dark mt-5">Tous</button>
-				<button type="button" class="family-button btn btn-dark mt-5">tout public</button>
-				<button type="button" class="adult-button btn btn-dark mt-5">déconseillé au moins de 12 ans</button>
+			<div class="text-center">
+				<div id="tags-selection">
+					<button type="button" class="all-button btn btn-dark mt-5">Tous</button>
+					<button type="button" class="family-button btn btn-dark mt-5">tout public</button>
+					<button type="button" class="adult-button btn btn-dark mt-5">déconseillé au moins de 12 ans</button>
+				</div>
 			</div>
-
-			{% if préhistoire is same as préhistoire %}
-				<img class="col-10 p-0 mh-100" src="">
-			{% endif %}
 
 			{% for movie in movies %}
 				<div class="{{ movie.public }} card mb-3 p-2 col-md-10 container bg-dark">
@@ -104,7 +102,7 @@
 						</div>
 						<div class="col-md-8">
 							<div class="card-body row justify-content-end">
-								<h5 class="card-title fw-bold">{{ movie.title }}</h5>
+								<h5 class="card-title fw-bold text-warning">{{ movie.title }}</h5>
 								<p class="card-text">{{ movie.description }}</p>
 								<p class="card-text">{{ movie.public }}</p>
 

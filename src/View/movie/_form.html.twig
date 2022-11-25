@@ -2,20 +2,20 @@
 
 {% block content %}
 
-	<div class="container ">
+	<div class="container">
 		<form method="post">
 			<input type="hidden" value="" name="id">
 
-			<div class="mb-3  ">
-				<label for="title" class="form-label">Titre</label>
+			<div class="mb-3">
+				<label for="title" class="form-label text-warning">Titre</label>
 				<input type="text" class="form-control" id="title" name="title" placeholder="">
 			</div>
-			<div class="mb-3 0 ">
-				<label for="description" class="form-label">Description</label>
+			<div class="mb-3">
+				<label for="description" class="form-label text-warning">Description</label>
 				<textarea class="form-control" name="description" id="description" rows="3"></textarea>
 			</div>
 			<div class="mb-3  ">
-				<label for="era" class="form-label">Epoque:</label>
+				<label for="era" class="form-label text-warning">Epoque:</label>
 				<select class="form-control form-select" id="era" name="era">
 					<option value="Sélectionner une époque">Sélectionner une époque</option>
 					<option value="Préhistoire">Préhistoire</option>
@@ -29,7 +29,7 @@
 				</select>
 			</div>
 			<div class="mb-3 ">
-				<label for="public" class="form-label">Public:</label>
+				<label for="public" class="form-label text-warning">Public:</label>
 				<select class="form-control form-select" id="public" name="public">
 					<option value="tout public">Tout public</option>
 					<option value="déconseillé au moins de 12 ans">Déconseillé au moins 12 ans</option>
@@ -37,7 +37,7 @@
 				</select>
 			</div>
 			<div class="mb-3 ">
-				<label for="url_image" class="form-label">URL</label>
+				<label for="url_image" class="form-label text-warning">URL</label>
 				<input type="text" class="form-control" id="url_image" name="url_image" placeholder="https://.....">
 
 				<div class="button  justify-content-center align-self-center pt-5" id="addbutton">

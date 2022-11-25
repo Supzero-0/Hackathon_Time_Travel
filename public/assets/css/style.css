@@ -32,7 +32,7 @@ h4 {
 }
 
 button {
-  margin-left: 2%;
+  margin-right: 2%;
   margin-bottom: 2%;
 }
 
@@ -43,6 +43,10 @@ button {
 .nav-bar {
   margin-top:2em;
   margin-left: -150px;
+}
+
+h1 {
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 
