@@ -60,15 +60,17 @@ function fetchMovieJSON() {
             // Build a block of HTML
 
             // console.log(movies.items[Math.floor(Math.random() * 249)].title);
+            const order = Math.floor(Math.random() * 249);
+            
             const titleMovieHtml = `
-            ${movies.items[Math.floor(Math.random() * 249)].title}
+            ${movies.items[order].title}
             `;
             document.querySelector('#title').value = titleMovieHtml;
 
-            const crewMovieHtml = `${movies.items[Math.floor(Math.random() * 249)].crew}`;
+            const crewMovieHtml = `${movies.items[order].crew}`;
             document.querySelector('#description').value = crewMovieHtml;
 
-            const urlMovieHtml = `${movies.items[Math.floor(Math.random() * 249)].image}`;
+            const urlMovieHtml = `${movies.items[order].image}`;
             document.querySelector('#url_image').value = urlMovieHtml;
 
 
