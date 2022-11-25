@@ -36,6 +36,10 @@ button {
   margin-bottom: 2%;
 }
 
+#affiche {
+  width: 90%;
+}
+
 .img-nav {
   padding: 0;
 }

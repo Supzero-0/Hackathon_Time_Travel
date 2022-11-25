@@ -24,4 +24,15 @@ class MovieController extends AbstractController
 
         return $this->twig->render('movie/add.html.twig');
     }
+
+    public function random()
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $movie = array_map('trim', $_POST);
+            $movieManager = new MovieManager();
+            $movieManager->insert($movie);
+        }
+
+        return $this->twig->render('movie/random.html.twig');
+    }
 }
