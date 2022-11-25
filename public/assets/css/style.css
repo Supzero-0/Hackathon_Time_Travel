@@ -40,6 +40,12 @@ button {
   padding: 0;
 }
 
+.nav-bar {
+  margin-top:2em;
+  margin-left: -150px;
+}
+
+
 /* The actual timeline (the vertical ruler) */
 .main-timeline-2 {
   position: relative;
@@ -119,7 +125,16 @@ button {
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575px) {
+
+  .nav {
+    display: none;
+  }
+
+  .mainpage {
+    display: grid;
+    grid-column: 12;
+  }
 
   /* Place the timelime to the left */
   .main-timeline-2::after {
