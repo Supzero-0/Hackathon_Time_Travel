@@ -13,7 +13,8 @@ class MovieManager extends AbstractManager
         // prepared request
         $query = "SELECT *
             FROM movie
-            WHERE era = :era;";
+            WHERE era = :era;
+            ORDER BY RAND()";
 
         $statement = $this->pdo->prepare($query);
 
