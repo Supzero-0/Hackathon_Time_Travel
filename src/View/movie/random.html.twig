@@ -4,32 +4,33 @@
 	<script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
 	<div class="row d-flex flex-row-reverse ">
 		<a class="col-2 " href="/">
-			<img class="col-6" src="/assets/images/favicon.png">
+			<img class="col-12" src="/assets/images/favicon.png">
 		</a>
-		<h1 class="col-10 text-center pt-5">Qualifiez une destination aléatoire</h1>
+		<h1 class="col-10 text-center pt-5 text-warning">Qualifiez une destination aléatoire</h1>
 	</div>
 
-	<div class="row d-flex flex-row ">
-		<button id="choice" type="button" class="btn btn-dark btn-lg col-2 ml-1" onclick="fetchMovieJSON()">Nouvelle destination</button>
-	</div>
+	
 
 	<div style="background-color: #696969;">
+		<div class="row d-flex flex-row ">
+			<button id="choice" type="button" class="btn btn-dark btn-lg col-2 ml-1 text-warning" onclick="fetchMovieJSON()">Nouvelle destination</button>
+		</div>
 		<div class="container ">
 			<form method="post" class="row">
 				<div class="col-4  ">
-					<img id="affiche" src="" class="mt-5">		
+					<img id="affiche" src="" class="mt-5">
 				</div>
 				<div class="col-8  ">
 					<div class="mb-3  ">
-						<label for="title" class="form-label">Titre</label>
+						<label for="title" class="form-label text-warning">Titre</label>
 						<input id="title" type="text" class="form-control" name="title" value="" placeholder="">
 					</div>
 					<div class="mb-3 0 ">
-						<label for="description" class="form-label">Description</label>
+						<label for="description" class="form-label text-warning">Description</label>
 						<textarea class="form-control" name="description" id="description" rows="3"></textarea>
 					</div>
 					<div class="mb-3  ">
-						<label for="era" class="form-label">Epoque:</label>
+						<label for="era" class="form-label text-warning">Epoque:</label>
 						<select class="form-control form-select" id="era" name="era">
 							<option value="Sélectionner une époque">Sélectionner une époque</option>
 							<option value="Préhistoire">Préhistoire</option>
@@ -42,29 +43,28 @@
 							<option value="Futur science-fiction">Futur science-fiction</option>
 
 						</select>
+						<p> Pensez à attribuer une époque à votre destination ;-) </p>
 					</div>
 					<div class="mb-3 ">
-						<label for="public" class="form-label">Public:</label>
+						<label for="public" class="form-label text-warning">Public:</label>
 						<select class="form-control form-select" id="public" name="public">
 							<option value="tout public">Tout public</option>
 							<option value="déconseillé au moins de 12 ans">Déconseillé au moins 12 ans</option>
 
 						</select>
+						<p> Pensez à attribuer un public à votre destination ;-) </p>
 					</div>
 					<div class="mb-3 ">
-						<label for="url_image" class="form-label">URL</label>
+						<label for="url_image" class="form-label text-warning">URL</label>
 						<input type="text" class="form-control" id="url_image" name="url_image" placeholder="https://.....">
 					</div>
 
 
-						<div class="button  justify-content-center align-self-center pt-5" id="addbutton">
-							<button>Envoyer</button>
-						</div>
+					<div class="button  justify-content-center align-self-center pt-5" id="addbutton">
+						<button>Envoyer</button>
+					</div>
 				</div>
 			</form>
-			</div>
 		</div>
 	</div>
-
-
-{% endblock %}
+</div>{% endblock %}
