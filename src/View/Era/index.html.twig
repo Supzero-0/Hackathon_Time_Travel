@@ -2,26 +2,97 @@
 
 {% block content %}
 	<section class="row">
-		<section class="col-1 bg-dark">
-			<p>blabla</p>
+		<section class="col-2 bg-dark nav">
+			<div class="main-timeline-2 nav-bar">
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Préhistoire" %}
+						<img src="/assets/images/prehistoire.jpg" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Préhistoire">
+							<img src="/assets/images/prehistoire.jpg" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Antiquité" %}
+						<img src="/assets/images/antiquite.jpg" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Antiquité">
+							<img src="/assets/images/antiquite.jpg" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Moyen-Age" %}
+						<img src="/assets/images/moyenage.jpg" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Moyen-Age">
+							<img src="/assets/images/moyenage.jpg" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Epoque Moderne" %}
+						<img src="/assets/images/moderne.jpg" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Epoque Moderne">
+							<img src="/assets/images/moderne.jpg" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Epoque Contemporaine" %}
+						<img src="/assets/images/contemporain.jpg" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Epoque Contemporaine">
+							<img src="/assets/images/contemporain.jpg" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Epoque Actuelle" %}
+						<img src="/assets/images/actuel.jpg" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Epoque Actuelle">
+							<img src="/assets/images/actuel.jpg" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Futur Dystopique" %}
+						<img src="/assets/images/futurdysto.jpg" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Futur Dystopique">
+							<img src="/assets/images/futurdysto.jpg" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+				<div class="timeline-2 right-2">
+					{% if movies.0.era == "Futur Science-Fiction" %}
+						<img src="/assets/images/futur.png" class="card-img-top border border-warning border-5" alt="Responsive image">
+					{% else %}
+						<a href="/eras?era=Futur Science-Fiction">
+							<img src="/assets/images/futur.png" class="card-img-top" alt="Responsive image">
+						</a>
+					{% endif %}
+				</div>
+			</div>
 		</section>
 
-		<section class="col-11">
+		<section class="col-12 col-sm-10">
 			<div class="row d-flex flex-row-reverse ">
 				<a class="col-2 " href="/">
-					<img class="col-6" src="/assets/images/favicon.png">
+					<img class="col-12" src="/assets/images/favicon.png">
 				</a>
-				<h1 class="col-10 text-center pt-5">{{ movies.0.era }}</h1>
+				<h1 class="col-10 text-center pt-5 text-warning">{{ movies.0.era }}</h1>
 			</div>
-			<div id="tags-selection">
-				<button type="button" class="all-button btn btn-dark mt-5">Tous</button>
-				<button type="button" class="family-button btn btn-dark mt-5">tout public</button>
-				<button type="button" class="adult-button btn btn-dark mt-5">déconseillé au moins de 12 ans</button>
+			<div class="text-center">
+				<div id="tags-selection">
+					<button type="button" class="all-button btn btn-dark mt-5">Tous</button>
+					<button type="button" class="family-button btn btn-dark mt-5">tout public</button>
+					<button type="button" class="adult-button btn btn-dark mt-5">déconseillé au moins de 12 ans</button>
+				</div>
 			</div>
-
-			{% if préhistoire is same as préhistoire %}
-					<img class="col-10 p-0 mh-100" src="">
-				{% endif %}
 
 			{% for movie in movies %}
 				<div class="{{ movie.public }} card mb-3 p-2 col-md-10 container bg-dark">
@@ -31,10 +102,10 @@
 						</div>
 						<div class="col-md-8">
 							<div class="card-body row justify-content-end">
-								<h5 class="card-title fw-bold">{{ movie.title }}</h5>
+								<h5 class="card-title fw-bold text-warning">{{ movie.title }}</h5>
 								<p class="card-text">{{ movie.description }}</p>
 								<p class="card-text">{{ movie.public }}</p>
-								
+
 							</div>
 						</div>
 					</div>

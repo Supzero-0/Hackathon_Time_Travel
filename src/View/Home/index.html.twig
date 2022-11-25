@@ -3,33 +3,38 @@
 {% block content %}
 	<div class="row">
 		<img src="/assets/images/favicon.png" class="col-2">
-		<h1 class="col-8 text-center pt-5">Le Voyage dans le temps</h1>
+		<h1 class="col-8 text-center pt-5 text-warning">Le Voyage dans le temps</h1>
 		<img src="/assets/images/favicon.png" class="col-2">
 	</div>
 	<h2 class="p-5">
 		Pendant un hackaton, le temps est une notion relative et certains aimeraient pouvoir le remonter...<br>
 		Pour votre agrément en attendant que la machine à voyager dans le temps soit terminée, nous vous proposons de découvrir les
-										 différentes époques que vous pourrez rallier.
+								 différentes époques que vous pourrez rallier.
 	</h2>
 
 
-	<button type="button" class="btn btn-dark btn-lg col-2 ml-1">
-		<a href="/movie/add">
-			Ajoutez une destination
-		</a>
-	</button>
-	<button type="button" class="btn btn-dark btn-lg col-2 ml-1">
-		<a href="/movie/random">
-			Laissez vous surprendre
-		</a>
-	</button>
+	<div class="text-center">
+		<button type="button" class="btn btn-dark btn-lg col-2 ml-1 ">
+			<a href="/movie/add" class="text-warning">
+				Ajouter une destination
+			</a>
+		</button>
+	</div>
+
+	<div class="text-center">
+		<button type="button" class="btn btn-dark btn-lg col-2 ml-1 ">
+			<a href="/movie/random" class="text-warning">
+				Laissez vous surprendre
+			</a>
+		</button>
+	</div>
 
 	<section style="background-color: #696969;">
 		<div class="container py-5">
 			<div class="main-timeline-2">
 				<div class="timeline-2 left-2">
 					<div class="card">
-						<a href="/eras?era=préhistoire">
+						<a href="/eras?era=Préhistoire">
 							<img src="/assets/images/prehistoire.jpg" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">Préhistoire</h4>
@@ -40,7 +45,7 @@
 				</div>
 				<div class="timeline-2 right-2">
 					<div class="card">
-						<a href="/eras?era=antiquité">
+						<a href="/eras?era=Antiquité">
 							<img src="/assets/images/antiquite.jpg" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">Antiquité</h4>
@@ -51,7 +56,7 @@
 				</div>
 				<div class="timeline-2 left-2">
 					<div class="card">
-						<a href="/eras?era=moyen-âge">
+						<a href="/eras?era=Moyen-Age">
 							<img src="/assets/images/moyenage.jpg" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">Moyen-Age</h4>
@@ -62,7 +67,7 @@
 				</div>
 				<div class="timeline-2 right-2">
 					<div class="card">
-						<a href="/eras?era=époque moderne">
+						<a href="/eras?era=Epoque Moderne">
 							<img src="/assets/images/moderne.jpg" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">
@@ -74,7 +79,7 @@
 				</div>
 				<div class="timeline-2 left-2">
 					<div class="card">
-						<a href="/eras?era=époque contemporaine">
+						<a href="/eras?era=Epoque Contemporaine">
 							<img src="/assets/images/contemporain.jpg" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">Epoque Contemporaine</h4>
@@ -85,7 +90,7 @@
 				</div>
 				<div class="timeline-2 right-2">
 					<div class="card">
-						<a href="/eras?era=époque actuelle">
+						<a href="/eras?era=Epoque Actuelle">
 							<img src="/assets/images/actuel.jpg" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">
@@ -97,7 +102,7 @@
 				</div>
 				<div class="timeline-2 left-2">
 					<div class="card">
-						<a href="/eras?era=futur dystopique">
+						<a href="/eras?era=Futur Dystopique">
 							<img src="/assets/images/futurdysto.jpg" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">Futur Dystopique</h4>
@@ -108,7 +113,7 @@
 				</div>
 				<div class="timeline-2 right-2">
 					<div class="card">
-						<a href="/eras?era=futur science-fiction">
+						<a href="/eras?era=Futur Science-Fiction">
 							<img src="/assets/images/futur.png" class="card-img-top" alt="Responsive image">
 							<div class="card-body p-4 bg-dark">
 								<h4 class="fw-bold mb-4">
