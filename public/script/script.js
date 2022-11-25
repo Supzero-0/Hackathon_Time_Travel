@@ -50,7 +50,7 @@ function updateForm(title, picture, content) {
 
 function fetchMovieJSON() {
     const citation = 1;
-    const url = `https://imdb-api.com/en/API/Top250Movies/k_m8djc507`;
+    const url = `https://imdb-api.com/en/API/Top250Movies/k_mohp1y4i`;
     axios.get(url)
         .then(function (response) {
             return response.data; // response.data instead of response.json() with fetch
