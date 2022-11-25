@@ -87,7 +87,7 @@ CREATE TABLE movie (
   ),
   (
   "Vercingétorix",
-  "Le destin de toute une nation est entre les mains d'un seul homme.",
+  "Au cours du premier siècle avant Jésus Christ, les troupes romaines envahissent la Gaule, pillant sans vergogne nos ancêtres. Refusant de se soumettre à César, Celtill, le chef des Arvernes, est assassiné et brûlé en place publique sous les yeux de son fils, le jeune Vercingétorix. Elevé par des druides et initié au combat, celui-ci veut retourner à Gergovie récupérer l'héritage de son père",
   "Antiquité",
   "tout public",
   "https://m.media-amazon.com/images/M/MV5BMTcyMjgxMjcwNV5BMl5BanBnXkFtZTcwOTkxMDAyMQ@@._V1_Ratio0.6833_AL_.jpg"
@@ -125,7 +125,7 @@ CREATE TABLE movie (
   "Lorsque sa fiancée secrète est exécutée pour avoir agressé un soldat anglais ayant tenté de la violer, Sire William Wallace commence une révolte contre le roi Édouard Ier d'Angleterre.",
   "Moyen-Age",
   "déconseillé au moins de 12 ans",
-  "https://m.media-amazon.com/images/M/MV5BNjUxMzVhNjgtYTQxNS00Zjg3LThlYjctOGFlZjg0YmI1ZmYyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6762_AL_.jpg"
+  "https://m.media-amazon.com/images/M/MV5BMzkzMmU0YTYtOWM3My00YzBmLWI0YzctOGYyNTkwMWE5MTJkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_Ratio0.6757_AL_.jpg"
   ),
   (
   "Molière",
